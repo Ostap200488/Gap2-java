@@ -1,5 +1,4 @@
 package problem1;
-// TestMyLine.java
 public class TestMyLine {
     public static void main(String[] args) {
         try {
