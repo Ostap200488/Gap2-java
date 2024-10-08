@@ -1,16 +1,12 @@
 package problem1;
-// MyPoint.java
 public class MyPoint {
     private int x;
     private int y;
 
-    // Constructor
     public MyPoint(int x, int y) {
         setX(x);
         setY(y);
     }
-
-    // Setters with validation
     public void setX(int x) {
         if (x < 0)
             throw new IllegalArgumentException("X coordinate cannot be negative.");
@@ -22,8 +18,6 @@ public class MyPoint {
             throw new IllegalArgumentException("Y coordinate cannot be negative.");
         this.y = y;
     }
-
-    // Getters
     public int getX() {
         return x;
     }
@@ -31,7 +25,6 @@ public class MyPoint {
     public int getY() {
         return y;
     }
-
     @Override
     public String toString() {
         return "(" + x + ", " + y + ")";
